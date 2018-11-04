@@ -1,0 +1,429 @@
+
+/* GLOBAL VALUES */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Lato', sans-serif;
+}
+
+i {
+	height: 50px
+	width:50px;
+}
+
+hr {
+	background-color: #fff
+}
+
+.divider {
+	color: red;
+	font-weight: bolder;
+}
+
+.modal-title {
+	color: #af4817;
+	font-weight: bold;
+}
+
+.modal-body {
+	color: #121212;
+}
+/* END OF GLOBAL VALUES */
+
+#company-logo {
+	margin-top: 7px;
+	margin-left: 10px;
+	height: 50px;
+	width: auto;
+	z-index: 150;
+}
+
+#topnav {
+	z-index: 99;
+	height: 78px;
+}
+
+#topnav {
+	background-image: url(../images/patterns/code-pattern.jpg);
+	border-bottom: 2px solid #af4817;
+}
+
+/* SLIDE OUT TOP */
+.extra {
+	height: 200px;
+	width: calc( 100vw - 1.1em); /* 1280x800 1440x900 */
+	top: 78px;
+	padding: 0;
+	margin: 0;
+	z-index: 98;
+	background-color: #343a40;
+	transform: translateY(-100%);
+	transition: transform 0.5s ease;
+	position: absolute;
+	color: #fff;
+}
+
+.extra h2 {
+	color: #E4692F;
+	text-align: left;
+}
+
+.extra li {
+	margin-left: 35px;
+}
+
+.extra-container {
+	margin: 0;
+	padding: 10px 100px 0px 100px;
+}
+
+.extra-container {}
+
+.extra-toggle {
+	min-width: 120px;
+	min-height: 120px;
+	background-image: url(../images/patterns/side-background.png);
+	background-size: cover;
+	position: relative;
+}
+
+.extra.open {
+	transform: translate(0);
+}
+
+.extra-button {
+	height: 50px;
+	width: 50px;
+	transition: 0.5s ease;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.extra-button-close {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	z-index: 99;
+}
+
+.extra-button.toggle {
+	transform: rotate(225deg);
+}
+
+/* END OF SLIDE OUT TOP */
+
+/* SIDE NAV */
+.sidenav {
+width: 4em;
+height: calc(100vh - 78px);
+position: fixed;
+top: 78px;
+left: 0;
+z-index: 200;
+background-color: #222222;
+color: #fff;
+text-align: center;
+}
+
+.sidenav a {
+	color: #fff;
+}
+
+.sidenav-btn {
+	margin: 20px 0px 20px;
+}
+
+.facebook i{
+	position: fixed;
+	bottom: 100px;
+	left: 15px;
+}
+
+.github i {
+	position: fixed;
+	bottom: 50px;
+	left: 15px;
+}
+
+/* END OF SIDE NAV */
+
+
+/* CONTENT */
+
+
+#home {
+/* 	padding-top: 78px; */
+	padding-left: 4em;
+	height: calc(100vh - 78px);
+	background-color: blue;
+	text-align: center;
+	background-image: url(../images/patterns/music_monitor.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	color: #fff;
+}
+
+
+#myname {
+	
+}
+#mainpic {
+	border-radius: 50%;
+	border: 7px solid white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 200px;
+	width: 200px;
+}
+
+.about {
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+.about h1,h2 {
+	/* text-shadow rgba(0,0,0,0.5) 0 -0.0625rem -0.0625rem; */
+	text-shadow red 0 -0.0625rem -0.0625rem;
+	font-weight: bolder;
+	font-family: 'Righteous', cursive;
+}
+
+/* END OF HOME */
+
+
+/* SKILLS */
+
+#skills {
+	padding-left: 4em;
+	height: 100vh;
+	background-color: #000;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.82'%3E%3Cpolygon fill='%23080000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%230f0000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23170000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%231e0000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23260000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+	background-size: cover;
+	color: #fff;
+}
+
+.experience {
+	padding: 80px 50px 0 50px;
+}
+
+#skills h2 {
+	/* text-align: center; */
+	padding: 20px;
+}
+
+#skills p {
+	font-size: 1.5rem;
+}
+
+.skillset {
+	padding: 80px 50px 0 50px;
+}
+
+.skillset  h2 {
+	text-align: center;
+	padding: 20px;
+}
+
+.skillset span {
+	font-weight: bolder;
+}
+
+.skill-icon {
+	height: 50px;
+	color: #000;
+}
+
+.progress-bar{
+	font-weight: bold;
+	font-size: 2.5em;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.progress {
+	margin: 10px;
+	height: 50px;
+	border: 2px solid #323232;
+	border-radius: 10px;
+}
+
+.skill-icon {
+	height: 50px;
+	width: 50px;
+	background-color: #fff;
+	padding: 5px;
+}
+
+.skillset-text {
+	font-size: 2em;
+	padding: 0 5px 0 5px;
+	background-color: #000;
+}
+
+#html5 {
+	width: 80%;
+	background-color: #e02e00;
+}
+
+#css3 {
+	width: 70%;
+	background-color: #006eba;
+}
+
+#js5 {
+	width: 15%;
+	background-color: #e4bd00;
+}
+
+#php7 {
+	width: 15%;
+	background-color: #6c7eb7;
+}
+
+#mysql {
+	width: 40%;
+	background-color: #326072;
+}
+
+#dotnet {
+	width: 40%;
+	background-color: #68217a;
+}
+
+#arduino {
+	width: 40%;
+	background-color: #199a9f;
+}
+
+/* END OF SKILLS */
+
+
+/* WORKS */
+#works {
+	padding: 80px 50px 0 50px;
+	padding-left: 4em;
+	color: #fff;
+	height: 100vh;
+	background-color: #1F0000;
+	color: #FFF;
+}
+
+#works h2 {
+	padding: 20px 50px 50px 50px;
+}
+
+.portfolio-list-wrapper {
+	padding-left: 3em;
+}
+
+.work-btn-visit {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 10px;
+}
+
+.work-btn-info {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 10px;
+}
+
+.work-img {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+/* END OF WORKS */
+
+
+
+/* CONTACT */
+
+#contact {
+	padding: 80px 50px 0 50px;
+	padding-left: 4em;
+	height: 90vh;
+	background-image: url(../images/patterns/code-pattern.jpg);
+	background-size: cover;
+	background-position: fixed;
+	color: #cbcbcb;
+	text-align: 
+}
+.footer {
+	height: calc(100% - 90vh);
+	padding-left: 4em;
+	background-color: #242424;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-family: 'Righteous', cursive;
+}
+
+/* CONTACT LEFT */
+.contact-info {
+	padding: 20px 50px 0 50px;
+}
+
+.contact-info h4{
+	font-family: 'Lato', sans-serif;
+}
+
+.contact-info a {
+	text-decoration: none;
+	color: #dcdcdc;
+}
+
+.contact-info-list {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.contact-info-details {
+	margin-left: 0.5rem;
+	font-size: 1.2em;
+
+}
+/* END CONTACT LEFT */
+
+.contact-form-wrapper {
+	padding: 20px 50px 0;
+
+}
+
+#contact 
+h1,h2,h3,h4,h5 {
+	text-align: center;
+	padding:10px;
+	margin-bottom: 0;
+	color: #dcdcdc;
+}
+
+.form-container {
+	border: 1px solid #151515;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-image: linear-gradient(to top, #9c3300, #d24906 );
+	color: #fff;
+}
+#email-form {
+	background-color: #151515;
+	border: 1px solid #151515;
+}
+
+.btn-submit {
+	text-align: right;
+}
+
+.form-control {
+	border: 1px solid #282828;
+	background-color: #f2f2f2;
+}
+
+
+
+
+/* END OF CONTACT */
